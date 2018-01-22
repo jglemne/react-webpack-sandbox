@@ -1,0 +1,46 @@
+@import "constants";
+
+.welcome-box {
+  min-height: $welcome-box-side;
+  background: rgba($green-rgb, 0.8);
+  height: $welcome-box-side;
+  width: $welcome-box-side;
+  border-radius: 25px;
+  box-shadow: 3px 3px 25px;
+}
+
+.welcome-box .flex-container-center-column {
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.welcome-box-item {
+  margin: 20px;
+  max-width: 0.5 * $welcome-box-side;
+  max-height: 0.5 * $welcome-box-side;
+  color: $white-hover;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.welcome-box-item.photo-stack-wrapper {
+  margin-bottom: 0;
+}
+
+.image {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.welcome-button {
+  width: 0.5 * $welcome-box-side;
+}
+
+.loading-image {
+  width: $loading-box-side;
+  height: $loading-box-side;
+  background-image: url("../img/gifs/loading.gif");
+  background-size: contain;
+}

@@ -1,0 +1,18 @@
+@import "constants";
+
+[data-reactroot] {
+  height: 100% !important;
+}
+
+body {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  background: url("../img/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.main-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
